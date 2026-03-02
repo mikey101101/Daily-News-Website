@@ -1,1 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact UK Heritage Trails for tour enquiries, event requests, and feedback." />
+  <title>UK Heritage Trails | Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">UK Heritage Trails</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a class="active" href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu">
+        Menu
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu container" hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a class="active" href="contact.html" aria-current="page">Contact Us</a>
+    </div>
+  </header>
+
+  <main id="main" class="container page">
+    <header class="page-head">
+      <h1>Contact Us</h1>
+      <p class="lead">Send an enquiry and we’ll respond within 1–2 working days.</p>
+    </header>
+
+    <section class="cards">
+      <form class="form card" aria-label="Contact form">
+        <div class="field">
+          <label for="cName">Name</label>
+          <input id="cName" type="text" autocomplete="name" required />
+        </div>
+
+        <div class="field">
+          <label for="cEmail">Email</label>
+          <input id="cEmail" type="email" autocomplete="email" required />
+        </div>
+
+        <div class="field">
+          <label for="cMessage">Message</label>
+          <textarea id="cMessage" rows="5" required></textarea>
+        </div>
+
+        <div class="actions">
+          <button class="btn primary" type="button" onclick="alert('Demo: message sent!')">
+            Send Message
+          </button>
+        </div>
+
+        <!-- Accessibility note: labels and required attributes help screen readers -->
+      </form>
+
+      <aside class="card" aria-label="Contact details">
+        <h2>Details</h2>
+        <p><strong>Email:</strong> info@ukheritagetrails.example</p>
+        <p><strong>Phone:</strong> +44 20 0000 0000</p>
+        <p><strong>Hours:</strong> Mon–Fri, 9:00–17:00</p>
+        <p class="muted">For your demo, replace these with realistic details or leave as placeholders.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> UK Heritage Trails</p>
+      <p class="muted">Thank you for supporting cultural tourism.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
