@@ -206,3 +206,21 @@ legend { font-weight: 700; padding: 0 6px; }
   transform: translateY(-6px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.08);
 }
+.nav-list a {
+  position: relative;
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #111;
+  transition: width 0.3s ease;
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
