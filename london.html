@@ -19,19 +19,21 @@
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a class="active" href="gallery.html">Gallery</a></li>
+          <li><a class="active" href="gallery.html" aria-current="page">Gallery</a></li>
           <li><a href="popular.html">Popular Places</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu" type="button">Menu</button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu" type="button">
+        Menu
+      </button>
     </div>
 
     <div id="mobileMenu" class="mobile-menu container" hidden>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a class="active" href="gallery.html">Gallery</a>
+      <a class="active" href="gallery.html" aria-current="page">Gallery</a>
       <a href="popular.html">Popular Places</a>
       <a href="contact.html">Contact Us</a>
     </div>
@@ -47,44 +49,58 @@
     <header class="page-head">
       <h1>London: Places to Visit</h1>
       <p class="lead">
-        A selection of iconic landmarks and cultural destinations in London.
+        Discover famous landmarks, museums and cultural attractions across London.
       </p>
     </header>
 
     <section class="gallery-grid" aria-label="London destinations">
       <figure class="card">
         <img src="images/london.jpg" alt="Big Ben and the Houses of Parliament in London" loading="lazy">
-        <figcaption><strong>Big Ben & Parliament</strong><br><span class="muted">Historic landmark on the River Thames.</span></figcaption>
-      </figure>
-
-      <<figure class="card">
-  <img src="images/tower-bridge.jpg" 
-       alt="Tower Bridge in London crossing the River Thames at sunset" 
-       loading="lazy">
-  <figcaption>
-    <strong>Tower Bridge</strong><br>
-    <span class="muted">A historic Victorian bridge over the River Thames.</span>
-  </figcaption>
-</figure>
-
-      <figure class="card">
-        <img src="images/tate.jpg" alt="Tate Modern art gallery interior" loading="lazy">
-        <figcaption><strong>Tate Modern</strong><br><span class="muted">Modern art museum and exhibitions.</span></figcaption>
+        <figcaption>
+          <strong>Big Ben & Parliament</strong><br>
+          <span class="muted">Historic landmark on the River Thames.</span>
+        </figcaption>
       </figure>
 
       <figure class="card">
-        <img src="images/tower-bridge.jpg"" alt="The London Eye on the South Bank" loading="lazy">
-        <figcaption><strong>London Eye</strong><br><span class="muted">City skyline views from the South Bank.</span></figcaption>
+        <img src="images/tower-bridge.jpg" alt="Tower Bridge in London crossing the River Thames" loading="lazy">
+        <figcaption>
+          <strong>Tower Bridge</strong><br>
+          <span class="muted">A historic Victorian bridge over the River Thames.</span>
+        </figcaption>
       </figure>
 
       <figure class="card">
-        <img src="images/history.jpg" alt="Historic building representing London heritage" loading="lazy">
-        <figcaption><strong>Historic London</strong><br><span class="muted">Heritage streets and historic architecture.</span></figcaption>
+        <img src="images/tate.jpg" alt="Tate Modern art gallery interior with exhibitions" loading="lazy">
+        <figcaption>
+          <strong>Tate Modern</strong><br>
+          <span class="muted">Modern art museum and exhibitions.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <!-- If you upload a London Eye image, change src to images/london-eye.jpg -->
+        <img src="images/london.jpg" alt="The London Eye on the South Bank in London" loading="lazy">
+        <figcaption>
+          <strong>London Eye</strong><br>
+          <span class="muted">Panoramic skyline views from the South Bank.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="images/history.jpg" alt="Historic architecture representing London heritage" loading="lazy">
+        <figcaption>
+          <strong>Historic London</strong><br>
+          <span class="muted">Heritage streets and historic architecture.</span>
+        </figcaption>
       </figure>
 
       <figure class="card">
         <img src="images/london.jpg" alt="A London museum or cultural attraction" loading="lazy">
-        <figcaption><strong>Museums & Culture</strong><br><span class="muted">Explore exhibitions and galleries.</span></figcaption>
+        <figcaption>
+          <strong>Museums & Culture</strong><br>
+          <span class="muted">Explore exhibitions and galleries across the city.</span>
+        </figcaption>
       </figure>
     </section>
 
