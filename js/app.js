@@ -133,3 +133,21 @@ setTimeout(() => {
   statusEl.style.transition = "opacity 0.6s ease";
   statusEl.style.opacity = "1";
 }, 50);
+const toggle = document.getElementById("themeToggle");
+
+if (toggle) {
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    const isDark = document.body.classList.contains("dark");
+    toggle.textContent = isDark ? "Light Mode" : "Dark Mode";
+
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+
+  // Load saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggle.textContent = "Light Mode";
+  }
+}
