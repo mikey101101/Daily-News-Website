@@ -1,1 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore popular places in London including landmarks, museums and cultural heritage sites." />
+  <title>UK Heritage Trails | London</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">UK Heritage Trails</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a class="active" href="gallery.html">Gallery</a></li>
+          <li><a href="popular.html">Popular Places</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu" type="button">Menu</button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu container" hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="popular.html">Popular Places</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <main id="main" class="container page">
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <a href="index.html">Home</a> <span aria-hidden="true">/</span>
+      <a href="gallery.html">Gallery</a> <span aria-hidden="true">/</span>
+      <span>London</span>
+    </nav>
+
+    <header class="page-head">
+      <h1>London: Places to Visit</h1>
+      <p class="lead">
+        A selection of iconic landmarks and cultural destinations in London. (Replace the images with your own.)
+      </p>
+    </header>
+
+    <section class="gallery-grid" aria-label="London destinations">
+      <figure class="card">
+        <img src="images/london.jpg" alt="Big Ben and the Houses of Parliament in London" loading="lazy">
+        <figcaption><strong>Big Ben & Parliament</strong><br><span class="muted">Historic landmark on the River Thames.</span></figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="images/london.jpg" alt="Tower Bridge in London over the River Thames" loading="lazy">
+        <figcaption><strong>Tower Bridge</strong><br><span class="muted">Iconic bridge with river views.</span></figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="images/tate.jpg" alt="Tate Modern art gallery interior" loading="lazy">
+        <figcaption><strong>Tate Modern</strong><br><span class="muted">Modern art museum and exhibitions.</span></figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="images/london.jpg" alt="The London Eye on the South Bank" loading="lazy">
+        <figcaption><strong>London Eye</strong><br><span class="muted">City skyline views from the South Bank.</span></figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="images/history.jpg" alt="Historic building representing London heritage" loading="lazy">
+        <figcaption><strong>Historic London</strong><br><span class="muted">Heritage streets and historic architecture.</span></figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="images/london.jpg" alt="A London museum or cultural attraction" loading="lazy">
+        <figcaption><strong>Museums & Culture</strong><br><span class="muted">Explore exhibitions and galleries.</span></figcaption>
+      </figure>
+    </section>
+
+    <div style="margin-top: 16px;">
+      <a class="btn secondary" href="gallery.html">← Back to Gallery</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> UK Heritage Trails</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
