@@ -125,3 +125,11 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 fadeElements.forEach(el => observer.observe(el));
+statusEl.style.opacity = "0";
+statusEl.textContent = `Thanks, ${fullName}! You’re signed up for updates.`;
+statusEl.style.color = "green";
+
+setTimeout(() => {
+  statusEl.style.transition = "opacity 0.6s ease";
+  statusEl.style.opacity = "1";
+}, 50);
