@@ -1,1 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn about UK Heritage Trails—our mission, values, and how we create memorable cultural experiences." />
+  <title>UK Heritage Trails | About Us</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">UK Heritage Trails</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html" aria-current="page">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu">
+        Menu
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu container" hidden>
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html" aria-current="page">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <main id="main" class="container page">
+    <header class="page-head">
+      <h1>About Us</h1>
+      <p class="lead">
+        We create guided experiences that connect visitors with the UK’s history, culture, and heritage sites.
+      </p>
+    </header>
+
+    <section class="cards">
+      <article class="card">
+        <h2>Our Mission</h2>
+        <p>
+          To make UK cultural heritage easy to explore through well-designed tours, clear information, and accessible routes.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>What We Offer</h2>
+        <ul>
+          <li>Walking tours across major cities and historic towns</li>
+          <li>Seasonal events and museum partnerships</li>
+          <li>Daily News updates to keep explorers informed</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Our Values</h2>
+        <p><strong>Respect</strong> for heritage • <strong>Clarity</strong> in information • <strong>Inclusion</strong> for all visitors</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> UK Heritage Trails</p>
+      <p class="muted">Questions? Visit the Contact page.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
