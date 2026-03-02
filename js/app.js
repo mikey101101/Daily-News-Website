@@ -62,9 +62,10 @@ if (form) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const fullName = document.getElementById("fullName").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const region = document.getElementById("region").value;
+    const fullNameInput = document.getElementById("fullName");
+const fullName = fullNameInput.value.trim();
+
+statusEl.textContent = `Thanks, ${fullName}! You're signed up for updates.`;
 
     const interests = [...document.querySelectorAll('input[name="interests"]:checked')]
       .map(cb => cb.value);
