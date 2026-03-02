@@ -1,1 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore our gallery of iconic UK tourist sights and heritage locations." />
+  <title>UK Heritage Trails | Gallery</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">UK Heritage Trails</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a class="active" href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="popular.html">Popular Places</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu" type="button">
+        Menu
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu container" hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a class="active" href="gallery.html" aria-current="page">Gallery</a>
+      <a href="popular.html">Popular Places</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <main id="main" class="container page">
+
+    <header class="page-head">
+      <h1>Gallery of UK Tourist Sights</h1>
+      <p class="lead">
+        A collection of beautiful destinations and cultural landmarks from across the United Kingdom.
+      </p>
+    </header>
+
+    <section class="gallery-grid">
+
+      <figure>
+        <img src="images/london.jpg" alt="The Houses of Parliament and Big Ben in London" loading="lazy">
+        <figcaption>London Landmarks</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/scottish-castles.jpg" alt="A historic castle in Scotland surrounded by hills" loading="lazy">
+        <figcaption>Scottish Castles</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/coast.jpg" alt="Dramatic coastal cliffs overlooking the sea in the UK" loading="lazy">
+        <figcaption>Coastal Destinations</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/history.jpg" alt="Ancient historical ruins representing British heritage" loading="lazy">
+        <figcaption>Historic Sites</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/national-parks.jpg" alt="Rolling hills and green countryside in a UK national park" loading="lazy">
+        <figcaption>National Parks</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/tate.jpg" alt="Interior of the Tate art gallery with modern artwork displays" loading="lazy">
+        <figcaption>Museums & Culture</figcaption>
+      </figure>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> UK Heritage Trails</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
