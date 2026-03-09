@@ -434,3 +434,6 @@ body.dark .btn.primary {
   margin-bottom: 10px;
   line-height: 1.5;
 }
+.card p {
+  margin-bottom: 12px;
+}
