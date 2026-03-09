@@ -378,3 +378,14 @@ body.dark .btn.primary {
   transform: scale(1.05);
   filter: brightness(1.05);
 }
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
