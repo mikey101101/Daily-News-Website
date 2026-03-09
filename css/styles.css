@@ -443,3 +443,6 @@ body.dark .btn.primary {
   justify-content: flex-start;
   gap: 10px;
 }
+.card h2 {
+  margin-bottom: 8px;
+}
