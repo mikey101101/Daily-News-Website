@@ -424,3 +424,13 @@ body.dark .btn.primary {
   font-size: 1.1rem;
   margin-bottom: 18px;
 }
+/* Improve list formatting inside cards */
+.card ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.card li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
