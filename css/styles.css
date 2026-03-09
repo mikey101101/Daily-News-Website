@@ -437,3 +437,9 @@ body.dark .btn.primary {
 .card p {
   margin-bottom: 12px;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
