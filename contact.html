@@ -69,21 +69,61 @@
         <!-- Accessibility note: labels and required attributes help screen readers -->
       </form>
 
-      <aside class="card" aria-label="Contact details">
-        <h2>Details</h2>
-        <p><strong>Email:</strong> info@ukheritagetrails.mikey</p>
-        <p><strong>Phone:</strong> +44 20 0000 0000</p>
-        <p><strong>Hours:</strong> Mon–Fri, 9:00–17:00</p>
-        <p class="muted">Michael Dedeji, Senior Publicisit and Main Directive Writer.</p>
-      </aside>
-    </section>
-  </main>
+      <form id="regForm" class="form">
+  <div class="field">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" required>
+  </div>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> UK Heritage Trails</p>
-      <p class="muted">Thank you for supporting cultural tourism.</p>
-    </div>
+  <div class="field">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="field">
+    <label for="region">Preferred Region</label>
+    <select id="region" name="region" required>
+      <option value="">Select a region</option>
+      <option value="London">London</option>
+      <option value="Scotland">Scotland</option>
+      <option value="Coastal UK">Coastal UK</option>
+      <option value="National Parks">National Parks</option>
+      <option value="Historic Cities">Historic Cities</option>
+    </select>
+  </div>
+
+  <fieldset>
+    <legend>Interests</legend>
+
+    <label class="check">
+      <input type="checkbox" name="interests" value="Landmarks">
+      Landmarks
+    </label>
+
+    <label class="check">
+      <input type="checkbox" name="interests" value="Museums">
+      Museums
+    </label>
+
+    <label class="check">
+      <input type="checkbox" name="interests" value="Nature">
+      Nature
+    </label>
+
+    <label class="check">
+      <input type="checkbox" name="interests" value="Historic Sites">
+      Historic Sites
+    </label>
+  </fieldset>
+
+  <div class="actions">
+    <button class="btn primary" type="submit">
+      Send Message
+    </button>
+  </div>
+
+  <p id="formStatus" class="form-status" aria-live="polite"></p>
+</form>
   </footer>
   <section class="container split fade-in">
 
