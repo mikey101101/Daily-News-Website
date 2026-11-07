@@ -1,204 +1,585 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Explore the UK's rich history with guided heritage tours, cultural events, and daily tourism news." />
-  <title>UK Heritage Trails | Home</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Historical Gaming Map</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="UK Heritage Trails home">
-        UK Heritage Trails
-      </a>
-<!--Navigation Bar-->
-      <nav class="site-nav" aria-label="Primary navigation">
-        <ul class="nav-list">
-          <li><a class="active" href="index.html" aria-current="page">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="popular.html">Popular Places</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </nav>
+    <main class="home-page">
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu">
-        Menu
-      </button>
+
+        <!-- =========================
+             TOP NAVIGATION
+        ========================== -->
+
+     
+<header class="home-nav">
+
+    <a href="index.html" class="home-logo">
+        HISTORICAL GAMING MAP
+    </a>
+
+    <div class="home-nav-info">
+        <span>INTERACTIVE ARCHIVE</span>
+        <span>//</span>
+        <span>001</span>
     </div>
 
-    <!-- Mobile menu (toggled via CSS + small JS) -->
-    <div id="mobileMenu" class="mobile-menu container" hidden>
-      <a class="active" href="index.html" aria-current="page">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-  </header>
+    <a href="figures.html" class="figures-nav-link">
+        FIGURES →
+    </a>
 
-  <main id="main">
-    <section class="hero-banner">
-  <div class="hero-overlay">
-    <div class="hero-content container">
-      <h1>Discover the United Kingdom</h1>
-      <p>Explore historic cities, coastal landscapes, castles and cultural landmarks across the UK.</p>
+</header>
 
-      <a class="btn primary" href="gallery.html">Explore Destinations</a>
-    </div>
-  </div>
-</section>
-    <section class="hero" aria-labelledby="heroTitle">
-      <div class="container hero-grid">
-        <div>
-          <h1 id="heroTitle">Discover the UK’s Heritage, One Trail at a Time</h1>
-          <p class="lead">
-            Guided tours, cultural events, and daily updates for explorers who love history, museums, and hidden stories.
-          </p>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="#register">Register for Updates</a>
-            <a class="btn secondary" href="#news">View Daily News</a>
-          </div>
+        <!-- =========================
+             INTRODUCTION
+        ========================== -->
 
-          <ul class="hero-badges" aria-label="Key highlights">
-            <li>Accessible routes</li>
-            <li>Local guides</li>
-            <li>Small groups</li>
-          </ul>
-        </div>
-<!--Hero Card for easier navigation-->
-        <aside class="hero-card" aria-label="Featured event">
-          <h2>Upcoming Tour</h2>
-          <p><strong>London Hidden Heritage Walk</strong></p>
-          <p class="muted">Next Saturday • 10:30 AM • 2.5 hours</p>
-          <p>Explore alleyways, historic markets, and stories behind iconic streets.</p>
-          <a class="btn tertiary" href="#register">Reserve interest</a>
-        </aside>
-      </div>
-    </section>
+        <section class="map-intro">
 
-    <section class="container split" id="news" aria-labelledby="newsTitle">
-      <header class="section-head">
-        <h2 id="newsTitle">Daily News and Updates</h2>
-        <p class="muted">
-          Latest tourism updates, cultural heritage news, and upcoming tour events across the UK.
-        </p>
-      </header>
+            <p class="map-status">
+                MAP STATUS // ACTIVE
+            </p>
 
-      <div class="cards">
-        <article class="card">
-          <h3>Tourism Spotlight</h3>
-          <p>
-            New seasonal travel tips and recommended routes for historic towns, castles, and museums.
-          </p>
-          <p class="meta">Updated: <time datetime="2026-03-02">2 March 2026</time></p>
-        </article>
+            <h1>EXPLORE</h1>
+      <h2>GAMING THROUGH TIME.</h2>
 
-        <article class="card">
-          <h3>Cultural Heritage</h3>
-          <p>
-            Highlights from conservation projects and exhibitions celebrating UK history and communities.
-          </p>
-          <p class="meta">Updated: <time datetime="2026-03-02">2 March 2026</time></p>
-        </article>
+            <p class="map-description">
+                Navigate video game history through the actions that define
+                how we play. Select a mechanic to begin exploring its genres,
+                games and historical development.
+            </p>
 
-        <article class="card">
-          <h3>Upcoming Events</h3>
-          <p>
-            Join themed walks, museum evenings, and heritage festivals. Sign up to receive event reminders.
-          </p>
-          <p class="meta">Updated: <time datetime="2026-03-02">2 March 2026</time></p>
-        </article>
-      </div>
-    </section>
+        </section>
 
-    <section class="container split" id="register" aria-labelledby="registerTitle">
-      <header class="section-head">
-        <h2 id="registerTitle">Register for Updates & Events</h2>
-        <p class="muted">Sign up to receive news, tour announcements, and special offers.</p>
-      </header>
 
-      <form class="form card" id="regForm" novalidate>
-        <div class="field">
-          <label for="fullName">Full name</label>
-          <input id="fullName" name="fullName" type="text" autocomplete="name" required />
-          <small class="hint">Enter your first and last name.</small>
-        </div>
+        <!-- =========================
+             INTERACTIVE MAP
+        ========================== -->
 
-        <div class="field">
-          <label for="email">Email address</label>
-          <input id="email" name="email" type="email" autocomplete="email" required />
-          <small class="hint">We’ll send confirmations to this address.</small>
-        </div>
+        <section class="mechanic-map" id="paths">
 
-        <div class="field">
-          <label for="region">Preferred region</label>
-          <select id="region" name="region" required>
-            <option value="">Select one…</option>
-            <option>London</option>
-            <option>South East</option>
-            <option>South West</option>
-            <option>Midlands</option>
-            <option>North</option>
-            <option>Scotland</option>
-            <option>Wales</option>
-            <option>Northern Ireland</option>
-          </select>
-        </div>
 
-        <fieldset class="field">
-          <legend>Interests</legend>
-          <label class="check"><input type="checkbox" name="interests" value="Museums" /> Museums</label>
-          <label class="check"><input type="checkbox" name="interests" value="Walking Tours" /> Walking tours</label>
-          <label class="check"><input type="checkbox" name="interests" value="Castles" /> Castles</label>
-          <label class="check"><input type="checkbox" name="interests" value="Food & Markets" /> Food & markets</label>
-        </fieldset>
-        <div class="form-status" role="status" aria-live="polite" id="formStatus"></div>
+            <!-- LEFT MAP INFORMATION -->
 
-        <div class="actions">
-          <button class="btn primary" type="submit">Sign Up</button>
-          <button class="btn secondary" type="reset">Clear</button>
-        </div>
+            <div class="map-interface map-interface-left">
 
-        <p class="meta">
-          By signing up, you agree to receive emails about tours and events. You can unsubscribe anytime.
-        </p>
-      </form>
+                <p>ARCHIVE // 001</p>
+                <p>PATHS DETECTED // 07</p>
+                <p>STATUS // ONLINE</p>
 
-      <aside class="card" aria-label="Recent signups preview">
-        <h3>Recent Signups</h3>
-        <p class="muted".</p>
-        <ul id="signupList" class="signup-list"></ul>
-        <button class="btn tertiary" id="clearSignups" type="button">Clear Stored Signups</button>
-      </aside>
-    </section>
-  </main>
+            </div>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> UK Heritage Trails</p>
-      <p class="muted">Michael Dedeji -- 250063273 -- Computer Science.</p>
-    </div>
-  </footer>
 
- 
-  <script src="js/app.js"></script>
-</body>
-</html>
-<section class="container split fade-in">
-  <button id="themeToggle" class="btn tertiary">Dark Mode</button>
-  <section class="gallery container">
-  <h2>Tour Highlights</h2>
-  <div class="gallery-grid">
-    <img src="images/london.jpg" alt="Historic London street" />
-    <img src="images/castle.jpg" alt="UK castle tour" />
-    <img src="images/museum.jpg" alt="Museum interior" />
-  </div>
-</section>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About Us</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact Us</a></li>
+            <!-- RIGHT MAP INFORMATION -->
+
+            <div class="map-interface map-interface-right">
+
+                <p>RANGE // 1970 — PRESENT</p>
+                <p>MODE // EXPLORATION</p>
+                <p>SELECT // MECHANIC</p>
+
+            </div>
+
+
+            <!-- =========================
+                 MAP CONNECTION LINES
+            ========================== -->
+
+            <div class="map-line line-one"></div>
+            <div class="map-line line-two"></div>
+            <div class="map-line line-three"></div>
+            <div class="map-line line-four"></div>
+            <div class="map-line line-five"></div>
+
+
+            <!-- =========================
+                 NODE 01 - EXPLORE
+            ========================== -->
+
+            <a href="map.html"
+               class="mechanic-node node-explore">
+
+                <span class="node-number">
+                    01
+                </span>
+
+                <span class="node-dot"></span>
+
+                <strong>
+                    EXPLORE
+                </strong>
+
+                <span class="node-description">
+                    Discovery // Worlds // Navigation
+                </span>
+
+                <span class="node-enter">
+                    ENTER PATH →
+                </span>
+
+            </a>
+
+
+            <!-- =========================
+                 NODE 02 - SOLVE
+            ========================== -->
+
+            <a href="#"
+               class="mechanic-node node-solve">
+
+                <span class="node-number">
+                    02
+                </span>
+
+                <span class="node-dot"></span>
+
+                <strong>
+                    SOLVE
+                </strong>
+
+                <span class="node-description">
+                    Logic // Puzzles // Strategy
+                </span>
+
+                <span class="node-enter">
+                    ENTER PATH →
+                </span>
+
+            </a>
+
+
+            <!-- =========================
+                 NODE 03 - JUMP
+            ========================== -->
+
+            <a href="#"
+               class="mechanic-node node-jump">
+
+                <span class="node-number">
+                    03
+                </span>
+
+                <span class="node-dot"></span>
+
+                <strong>
+                    JUMP
+                </strong>
+
+                <span class="node-description">
+                    Movement // Timing // Platforms
+                </span>
+
+                <span class="node-enter">
+                    ENTER PATH →
+                </span>
+
+            </a>
+
+
+            <!-- =========================
+                 NODE 04 - BUILD
+            ========================== -->
+
+            <a href="#"
+               class="mechanic-node node-build">
+
+                <span class="node-number">
+                    04
+                </span>
+
+                <span class="node-dot"></span>
+
+                <strong>
+                    BUILD
+                </strong>
+
+                <span class="node-description">
+                    Creation // Systems // Sandbox
+                </span>
+
+                <span class="node-enter">
+                    ENTER PATH →
+                </span>
+
+            </a>
+
+
+            <!-- =========================
+                 NODE 05 - FIGHT
+            ========================== -->
+
+            <a href="#"
+               class="mechanic-node node-fight">
+
+                <span class="node-number">
+                    05
+                </span>
+
+                <span class="node-dot"></span>
+
+                <strong>
+                    FIGHT
+                </strong>
+
+                <span class="node-description">
+                    Combat // Action // Competition
+                </span>
+
+                <span class="node-enter">
+                    ENTER PATH →
+                </span>
+
+            </a>
+
+
+            <!-- =========================
+                 NODE 06 - RUN
+            ========================== -->
+
+            <a href="#"
+               class="mechanic-node node-run">
+
+                <span class="node-number">
+                    06
+                </span>
+
+                <span class="node-dot"></span>
+
+                <strong>
+                    RUN
+                </strong>
+
+                <span class="node-description">
+                    Speed // Movement // Reaction
+                </span>
+
+                <span class="node-enter">
+                    ENTER PATH →
+                </span>
+
+            </a>
+
+
+            <!-- =========================
+                 NODE 07 - SURVIVE
+            ========================== -->
+
+            <a href="#"
+               class="mechanic-node node-survive">
+
+                <span class="node-number">
+                    07
+                </span>
+
+                <span class="node-dot"></span>
+
+                <strong>
+                    SURVIVE
+                </strong>
+
+                <span class="node-description">
+                    Resources // Risk // Endurance
+                </span>
+
+                <span class="node-enter">
+                    ENTER PATH →
+                </span>
+
+            </a>
+
+
+            <!-- =========================
+                 MAP INSTRUCTION
+            ========================== -->
+
+            <div class="map-instruction">
+
+                <span class="instruction-line"></span>
+
+                <p>
+                    SELECT A NODE<br>
+                    TO BEGIN
+                </p>
+
+            </div>
+
+
+            <!-- =========================
+                 MAP FOOTER
+            ========================== -->
+
+            <div class="map-footer">
+
+                <span>
+                    07 PATHS
+                </span>
+
+                <span>
+                    GAMING HISTORY // INTERACTIVE MAP
+                </span>
+
+                <span>
+                    1970 — PRESENT
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT THE MAP
+        ========================== -->
+
+        <section class="home-about">
+
+            <div class="home-section-label">
+
+                <span>
+                    // ABOUT THE MAP
+                </span>
+
+                <span>
+                    002
+                </span>
+
+            </div>
+
+
+            <div class="about-layout">
+
+
+                <div class="about-title">
+
+                    <h2>
+                        VIDEO GAMES ARE<br>
+                        DEFINED BY WHAT<br>
+                        <span>THEY LET US DO.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-description">
+
+                    <p class="about-mechanics">
+                        Explore. Build. Fight. Solve.
+                        Jump. Run. Survive.
+                    </p>
+
+                    <p>
+                        The Historical Gaming Map explores video game
+                        history through the mechanics players use to
+                        interact with virtual worlds.
+                    </p>
+
+                    <p>
+                        Each path leads to different genres and
+                        representative games, demonstrating how familiar
+                        gameplay mechanics have developed throughout
+                        gaming history.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURED ARCHIVE
+        ========================== -->
+
+        <section class="featured-archive">
+
+            <div class="home-section-label">
+
+                <span>
+                    // FROM THE ARCHIVE
+                </span>
+
+                <span>
+                    003
+                </span>
+
+            </div>
+
+
+            <div class="archive-grid">
+
+
+                <!-- =====================
+                     MINECRAFT
+                ====================== -->
+
+                <a href="minecraft.html"
+                   class="archive-entry minecraft-entry">
+
+                    <div class="archive-entry-top">
+
+                        <span>
+                            ENTRY // 001
+                        </span>
+
+                        <span>
+                            2011
+                        </span>
+
+                    </div>
+
+
+                    <div class="archive-entry-content">
+
+                        <p class="archive-type">
+                            SANDBOX // SURVIVAL
+                        </p>
+
+                        <h3>
+                            MINECRAFT
+                        </h3>
+
+                        <p class="archive-summary">
+                            Build, explore and survive in an
+                            open-ended world shaped by the player.
+                        </p>
+
+                    </div>
+
+
+                    <span class="archive-open">
+                        VIEW ENTRY →
+                    </span>
+
+                </a>
+
+
+                <!-- =====================
+                     GRAND THEFT AUTO V
+                ====================== -->
+
+                <a href="gta5.html"
+                   class="archive-entry gta-entry">
+
+                    <div class="archive-entry-top">
+
+                        <span>
+                            ENTRY // 002
+                        </span>
+
+                        <span>
+                            2013
+                        </span>
+
+                    </div>
+
+
+                    <div class="archive-entry-content">
+
+                        <p class="archive-type">
+                            OPEN WORLD // ACTION
+                        </p>
+
+                        <h3>
+                            GRAND THEFT<br>
+                            AUTO V
+                        </h3>
+
+                        <p class="archive-summary">
+                            Explore Los Santos through missions,
+                            free-roaming activities and player choice.
+                        </p>
+
+                    </div>
+
+
+                    <span class="archive-open">
+                        VIEW ENTRY →
+                    </span>
+
+                </a>
+
+
+                <!-- =====================
+                     TERRARIA
+                ====================== -->
+
+                <a href="terraria.html"
+                   class="archive-entry terraria-entry">
+
+                    <div class="archive-entry-top">
+
+                        <span>
+                            ENTRY // 003
+                        </span>
+
+                        <span>
+                            2011
+                        </span>
+
+                    </div>
+
+
+                    <div class="archive-entry-content">
+
+                        <p class="archive-type">
+                            SANDBOX // ADVENTURE
+                        </p>
+
+                        <h3>
+                            TERRARIA
+                        </h3>
+
+                        <p class="archive-summary">
+                            Explore, craft, build and fight through
+                            an open-ended two-dimensional world.
+                        </p>
+
+                    </div>
+
+
+                    <span class="archive-open">
+                        VIEW ENTRY →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        
+<footer class="home-footer">
+
+    <span>
+        HISTORICAL GAMING MAP
+    </span>
+
+    <span>
+        07 PATHS // 03 ARCHIVE ENTRIES
+    </span>
+
+    <span>
+        1970 — PRESENT
+    </span>
+
+    <span class="creator-signature">
+        <span class="signature-name">Michael Dedeji</span>
+        <span class="signature-role">// CREATOR & DEVELOPER</span>
+    </span>
+
+</footer>
